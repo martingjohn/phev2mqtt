@@ -1,0 +1,25 @@
+{
+  "name": "PHEV_Setup",
+  "version": "1.0",
+  "slug": "phev_setup",
+  "description": "Mitsubishi PHEV WiFi Setup",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "before",
+  "boot": "auto",
+  "host_network": true,
+  "privileged": ["NET_ADMIN"],
+  "options": {
+    "phev_ssid": null,
+    "phev_password": null,
+    "client_mac": null,
+    "wlan": "wlan0",
+    "debug": false
+  },
+  "schema": {
+    "phev_ssid": "str",
+    "phev_password": "str",
+    "client_mac": "str",
+    "wlan": "str",
+    "debug": "bool"
+  }
+}
